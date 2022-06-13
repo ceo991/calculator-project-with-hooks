@@ -107,7 +107,7 @@ function App() {
 
   const evaluate = () => {
     let result = evaluateExpression(calculation)
-    // this.setState({calculation:result.toString(),prevCalc: result})
+
     setCalculation(result.toString())
     setPrevCalc(result)
   }
