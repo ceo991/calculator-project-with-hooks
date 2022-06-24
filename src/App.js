@@ -119,6 +119,7 @@ function App() {
         <Preview calculation={calculation}/>
         <Buttons handleEntry={entryHandler} clear={initialize} evaluate={evaluate} />
       </div>
+      <h4><a href='https://github.com/ceo991/calculator-project-with-hooks' style={{color:"#8110C7",textDecoration: "none"}}>You can see the source code here</a></h4>
     </div>
   );
 }
