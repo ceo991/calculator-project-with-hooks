@@ -1,4 +1,4 @@
-## expense-tracker
+## calculator-project
 
 Live version of the app is **here**: https://calculator-app-demo.netlify.app
 
