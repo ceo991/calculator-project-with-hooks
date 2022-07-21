@@ -65,7 +65,8 @@ function App() {
       if((element==="/" || element==="*" || element==="+")&&(tempCalc.slice(-1)==="/" || tempCalc.slice(-1)==="*" || tempCalc.slice(-1)==="-" || tempCalc.slice(-1)==="+")){
 
         let tempArr = [...tempCalc];
-        let checkArr = tempArr.slice(-2)
+        tempArr = tempArr.filter((el)=>el !== ",");
+        let checkArr = tempArr.slice(-1)
         if(checkArr.length>1&&checkArr.includes("-")){
           tempArr.splice(tempArr.indexOf(checkArr[0]),2,element)
           tempCalc=tempArr
@@ -77,7 +78,7 @@ function App() {
         tempArr.push(element)
         tempArr.join("")
         tempCalc=tempArr
-        setCalculation(tempCalc)
+        setCalculation(tempCalc.filter((el)=>el !== ",").join(""))
         setPrevCalc(tempPrev)
         return
       }
